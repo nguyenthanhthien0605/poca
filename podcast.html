@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Poca - Podcast &amp; Audio Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Poca - Podcast</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./data/img/core-img/favicon.ico">
+
+  <!-- Core Stylesheet -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="data/data.js"></script>
+  <script src="js/info.js"></script>
+  
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-thumbnail">
+      <img src="./data/img/core-img/preloader.png" alt="">
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="pocaNav">
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="./data/img/core-img/logo.png" alt=""></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+               <ul id="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li class="current-item"><a href="./podcast.html">Podcasts</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+
+              <!-- Top Search Area -->
+              <div class="top-search-area">
+                <form action="index.html" method="post">
+                  <input type="text" name="top-search-bar" class="form-control" onkeypress="return event.keyCode != 13;" placeholder="Search and hit enter...">
+                  <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </div>
+
+              <!-- Top Social Area -->
+              <div class="top-social-area">
+                <a href="#!" class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="#!" class="fa fa-twitter" aria-hidden="true"></a>
+                <a href="#!" class="fa fa-pinterest" aria-hidden="true"></a>
+                <a href="#!" class="fa fa-instagram" aria-hidden="true"></a>
+                <a href="#!" class="fa fa-youtube-play" aria-hidden="true"></a>
+              </div>
+
+            </div>
+            <!-- Nav End -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+	
+  <div id="myModal_Suggestion" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color: #1a1a1a">
+            <div class="modal-header">
+                <button type="button" class="close" style="color: snow" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="color: white">Hi there ! hope you enjoy our website</h4>
+            </div>
+            <div class="modal-body">
+                <p style="color: white">
+                    <a id="Signup_modal" role='button' class="btn">Sign up</a>
+                    or 
+                    <a id="btn-modal-signin" role='button' class="btn">Sign in</a>
+                    for having more fun</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area Start ***** -->
+	
+  <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(data/img/bg-img/2.jpg);">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title mt-70">Podcasts</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home"></i> Home</a></p>
+              <li class="breadcrumb-item active" aria-current="page">Podcasts</p>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Featured Music Area Start ***** -->
+  <div class="poca-featured-music-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="poca-music-area box-shadow d-flex align-items-center flex-wrap border" data-animation="fadeInUp" data-delay="900ms">
+            <div class="poca-music-thumbnail">
+              <img src="./data/img/Sing Me To Sleep.jpg" alt="">
+            </div>
+            <div class="poca-music-content">
+              <span class="music-published-date">3 June 2016</span>
+              <h2>Sing Me To Sleep</h2>
+              <div class="music-meta-data">
+                <p>By <a href="#!" class="music-author">Admin</a> | <a href="#!" class="music-catagory">Alan Walker_Iselin S</a> | <a href="#!" class="music-duration">00:03:10</a></p>
+              </div>
+              <!-- Music Player -->
+
+              <div class="poca-music-player">
+                <audio preload="audio" >
+                  <source src="data/audio/Sing Me To Sleep - Alan Walker_ Iselin S [128kbps_MP3].mp3">
+                </audio>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#!"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+                <div>
+                  <a href="#!" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a>
+                  <a href="#!"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Featured Music Area End ***** -->
+  <!-- Music Album -->
+  <section>
+    <div class="poca-featured-music-area mt-50">
+      <div class="container">
+        <div class="album-tracks album">
+          <ol>
+            <a href="#!"> <li> <span>Feel Invincible</span><span>3:49</span></li></a>
+            <a href="#!"> <li> <span>Back From The Dead</span><span>3:33</span></li></a>
+            <a href="#!"> <li> <span>Stars</span><span>3:47</span></li></a>
+            <a href="#!"> <li> <span>I Want To Live</span><span>3:28</span></li></a>
+            <a href="#!"> <li> <span>Undefeated</span><span>3:35</span></li></a>
+            <a href="#!"> <li> <span>Famous</span><span>3:18</span></li></a>
+            <a href="#!"> <li> <span>Lions</span><span>3:24</span></li></a>
+            <a href="#!"> <li> <span>Out Of Hell</span><span>3:34</span></li></a>
+            <a href="#!"> <li> <span>Burn It Down</span><span>3:16</span></li></a>
+            <a href="#!"> <li> <span>Watching For Comets</span><span>3:29</span></li></a>
+            <a href="#!"> <li> <span>Saviors Of The World</span><span>3:46</span></li></a>
+            <a href="#!"> <li> <span>The Resistance</span><span>3:52</span></li></a>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <!-- ============================The Famous===================================== -->
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#!"><i class="fa fa-book"></i> library Podcast</a></p>
+              <li class="breadcrumb-item active" aria-current="page">The Famous</p>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" style="width: 100%;">
+      <div id="avtContainer" class="col-md-4" style="height: 400px; padding-right: 0px;">
+        <img id="avatar" src="">
+      </div>
+      <div id="info" class="col-md-4" style="height: 400px;">
+        <div id="detail"></div>
+      </div>
+      <div id="list" class="col-md-4" style="height: 400px;">
+        <div class="row">
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv0"></div>
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv1"></div>
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv2"></div>
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv3"></div>
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv4"></div>
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv5"></div>
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv6"></div>
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv7"></div>
+          <div class="col-md-4 avt-holder"><img class="small-avt" src="" id="nv8"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-area section-padding-80-0"></div>
+  <!-- ============================================================================== -->
+
+  <!-- ***** Podcast Details Area Start ***** -->
+  <section class="blog-details-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="comment_area mb-50 clearfix">
+                <h5 class="title">03 Comments</h5>
+
+                <ol>
+                  <!-- Single Comment Area -->
+                  <li class="single_comment_area">
+                    <!-- Comment Content -->
+                    <div class="comment-content d-flex">
+                      <!-- Comment Author -->
+                      <div class="comment-author">
+                        <img src="data/img/bg-img/16.jpg" alt="author">
+                      </div>
+                      <!-- Comment Meta -->
+                      <div class="comment-meta">
+                        <a href="#!" class="post-date">27 Aug 2018</a>
+                        <h5>Jerome Leonard</h5>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
+                        <a href="#!" class="like">Like</a>
+                        <a href="#!" class="reply">Reply</a>
+                      </div>
+                    </div>
+
+                    <ol class="children">
+                      <li class="single_comment_area">
+                        <!-- Comment Content -->
+                        <div class="comment-content d-flex">
+                          <!-- Comment Author -->
+                          <div class="comment-author">
+                            <img src="data/img/bg-img/17.jpg" alt="author">
+                          </div>
+                          <!-- Comment Meta -->
+                          <div class="comment-meta">
+                            <a href="#!" class="post-date">27 Aug 2018</a>
+                            <h5>Theodore Adkins</h5>
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
+                            <a href="#!" class="like">Like</a>
+                            <a href="#!" class="reply">Reply</a>
+                          </div>
+                        </div>
+                      </p>
+                    </ol>
+                  </p>
+
+                  <!-- Single Comment Area -->
+                  <li class="single_comment_area">
+                    <!-- Comment Content -->
+                    <div class="comment-content d-flex">
+                      <!-- Comment Author -->
+                      <div class="comment-author">
+                        <img src="data/img/bg-img/18.jpg" alt="author">
+                      </div>
+                      <!-- Comment Meta -->
+                      <div class="comment-meta">
+                        <a href="#!" class="post-date">27 Aug 2018</a>
+                        <h5>Roger Marshall</h5>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
+                        <a href="#!" class="like">Like</a>
+                        <a href="#!" class="reply">Reply</a>
+                      </div>
+                    </div>
+                  </p>
+                </ol>
+              </div>
+          <div class="contact-form">
+            <h5 class="mb-30">Leave A Comment</h5>
+            <!-- Form -->
+            <form action="#!" method="post">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Name">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Email">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Comment"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn poca-btn mt-30">Post Comment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="single-widget-area tags-widget mb-80">
+              <h5 class="widget-title">Popular Tags</h5>
+
+              <ul class="tags-list">
+                <li><a href="#!">Creative</a></p>
+                <li><a href="#!">Unique</a></p>
+                <li><a href="#!">audio</a></p>
+                <li><a href="#!">Episodes</a></p>
+                <li><a href="#!">ideas</a></p>
+                <li><a href="#!">Podcasts</a></p>
+                <li><a href="#!">Wordpress Template</a></p>
+                <li><a href="#!">startup</a></p>
+                <li><a href="#!">video</a></p>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+
+  <!-- ***** Newsletter Area Start ***** -->
+  <footer class="footer-area section-padding-80-0">
+  <section class="poca-newsletter-area bg-img bg-overlay pt-50 jarallax" style="background-image: url(data/img/bg-img/15.jpg);">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Newsletter Content -->
+        <div class="col-12 col-lg-6">
+          <div class="newsletter-content mb-50">
+            <h2>Sign Up To Newsletter</h2>
+            <h6>Subscribe to receive info on our latest news and episodes</h6>
+          </div>
+        </div>
+        <!-- Newsletter Form -->
+        <div class="col-12 col-lg-6">
+          <div class="newsletter-form mb-50">
+            <form action="#!" method="post">
+              <input type="email" name="nl-email" class="form-control" placeholder="Your Email">
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Newsletter Area End ***** -->
+
+  <!--  -->
+	<div id="myModal_Suggestion" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color: #1a1a1a">
+            <div class="modal-header">
+                <button type="button" class="close" style="color: snow" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="color: white">Hi there ! hope you enjoy our website</h4>
+            </div>
+            <div class="modal-body">
+                <p style="color: white">
+                    <a id="Signup_modal" role='button' class="btn">Sign up</a>
+                    or 
+                    <a id="btn-modal-signin" role='button' class="btn">Sign in</a>
+                    for having more fun</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+  </div>
+	<!--  -->
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area section-padding-80-0">
+    <div class="container">
+      <div class="row">
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-footer-widget mb-80">
+            <!-- Widget Title -->
+            <h4 class="widget-title">About Us</h4>
+
+            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+            <div class="copywrite-content">
+              <p>&copy; 
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-footer-widget mb-80">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Categories</h4>
+
+            <!-- Catagories Nav -->
+            <nav>
+              <ul class="catagories-nav">
+                <li><a href="#!">Entrepreneurship</a></p>
+                <li><a href="#!">Media</a></p>
+                <li><a href="#!">Tech</a></p>
+                <li><a href="#!">Tutorials</a></p>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-footer-widget mb-80">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Lastest Episodes</h4>
+
+            <!-- Single Latest Episodes -->
+            <div class="single-latest-episodes">
+              <p class="episodes-date">December 9, 2018</p>
+              <a href="#!" class="episodes-title">Episode 205 - See Ya In Three!</a>
+            </div>
+            <!-- Single Latest Episodes -->
+            <div class="single-latest-episodes">
+              <p class="episodes-date">December 8, 2018</p>
+              <a href="#!" class="episodes-title">Episode 204 - See Ya In Two!</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-footer-widget mb-80">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Follow Us</h4>
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="#!" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#!" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#!" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+              <a href="#!" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#!" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <!-- App Download Button -->
+            <div class="app-download-button mt-30">
+              <a href="#!"><img src="./data/img/core-img/app-store.png" alt=""></a>
+              <a href="#!"><img src="./data/img/core-img/google-play.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All js -->
+  <script src="js/poca.bundle.js"></script>
+  <!-- Active js -->
+  <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>
